@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music A&R | Ballina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">
+          <span>Music</span> A&R
+        </div>
+
+        <nav class="links" aria-label="Navigimi kryesor">
+          <a href="#">Ballina</a>
+          <a href="#">Muzikë</a>
+          <a href="#">Si funksionon</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Muzika dhe shërimi i saj</h1>
+          <p class="lead">
+            Zbulo këngë që i përshtaten humorit tënd, ndezin fokusin dhe e kthejnë çdo moment
+            në një soundtrack të paharrueshëm. Shijon lista të zgjedhura me kujdes, lëshime të
+            reja dhe favorite të përjetshme në një përvojë të bukur muzikore.
+          </p>
+
+          <div class="cta">
+            <a class="primary" href="#player">Dëgjo tani</a>
+            <a class="secondary" href="#player">Eksploro playlistat</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="image1.jpg" alt="Personi duke dëgjuar muzikë" />
+        </div>
+      </div>
+    </main>
+
+    <section class="feature-strip" aria-label="Karakteristikat e muzikës">
+      <div class="container feature-grid">
+        <div class="feature-card">
+          <span class="feature-tag">Të zgjedhura</span>
+          <h3>Lëshime të reja</h3>
+          <p>Këngë të zgjedhura me kujdes sipas humorit tënd çdo ditë.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-tag">Luks</span>
+          <h3>Zë premium</h3>
+          <p>Design i pastër, ton i pasur dhe një ndjenjë premium dëgjimi.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-tag">Menjëherë</span>
+          <h3>Luaj me një klik</h3>
+          <p>Këmbe këngët shpejt dhe mbaj energjinë aktive.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="player-section" id="player">
+      <div class="container player-panel">
+        <div class="player-header">
+          <div>
+            <p class="eyebrow small">Kënga e zgjedhur</p>
+            <h2>Po luan</h2>
+          </div>
+          <button class="play-button" type="button">▶ Luaj</button>
+        </div>
+
+        <div class="player-layout">
+          <div class="music-display" aria-label="Display i player-it">
+            <div class="vinyl-wrap">
+              <div class="tone-arm"></div>
+              <div class="vinyl-disc">
+                <div class="vinyl-label" id="vinyl-label">M</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="player-controls">
+          <button class="control-pill active" type="button" data-control="autoplay">Auto Play</button>
+          <button class="control-pill" type="button" data-control="airplay">AirPlay</button>
+          <button class="control-pill" type="button" data-control="queue">Rradhë</button>
+          <button class="control-pill" type="button" data-control="shuffle">Përzier</button>
+        </div>
+
+        <div class="music-list">
+          <button class="song-item active" type="button" data-src="songs/Cunami - Violet.mp3" data-theme="gold">
+            <span class="song-number">01</span>
+            <span class="song-name">Cunami - Violet</span>
+            <span class="song-time">3:48</span>
+          </button>
+          <button class="song-item" type="button" data-src="songs/Fireworks Drake Ft. Alicia Keys with lyrics.mp3" data-theme="green">
+            <span class="song-number">02</span>
+            <span class="song-name">Fireworks</span>
+            <span class="song-time">4:12</span>
+          </button>
+          <button class="song-item" type="button" data-src="songs/videoplayback.mp4" data-theme="red">
+            <span class="song-number">03</span>
+            <span class="song-name">Dhurim</span>
+            <span class="song-time">3:36</span>
+          </button>
+          <button class="song-item" type="button" data-src="songs/videoplayback.mp4" data-theme="blue">
+            <span class="song-number">04</span>
+            <span class="song-name">Finem</span>
+            <span class="song-time">4:05</span>
+          </button>
+        </div>
+
+        <audio id="track-audio" preload="auto" src="songs/Cunami - Violet.mp3"></audio>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
